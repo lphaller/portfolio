@@ -1,0 +1,1370 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}*/
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles Open
+   ========================================================================== */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+    font-family: 'depressionist_3_revisitedRg';
+    src: url('../font/webfontkit-20180412-140655/depressionist_3_revisited_2010-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20180412-140655/depressionist_3_revisited_2010-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    
+    
+}
+body p {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*.logo{
+    position: fixed;
+}*/
+
+.background{
+     background-image: url("../img/grain_mobile.png");
+    background-repeat: repeat;
+    
+}
+
+
+nav{
+    font-family: 'Oswald', sans-serif;
+    color: #333333;
+
+}
+
+
+
+button.navbar-toggler{
+    border: none;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+.thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8A060D;
+    color: #ffffff;
+    height: 200px;
+}
+
+.hero{
+    width: 100%;
+    height:249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/hero-pizza-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.hero h1{
+    
+    font-size: 32px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+}
+.hero h2{
+    margin-top: 0px;
+    font-size: 48px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+    display: flex;
+    justify-content:center;
+}
+
+.hero a{
+    /* Positioning and sizing */
+    display: block;
+    width: 99px;
+    
+    /* Padding and margins */
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; 
+    text-decoration: none;
+    
+    /* Border styles */
+    background-color: #BD1714;
+    border-radius: 10px;
+}
+.hero-links{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald";
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+    
+}
+.hero-links a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section{
+    padding:20px;
+    line-height: 1.4;
+}
+
+/* ================= ready-to-eat ============== */
+
+.ready-to-eat {
+    line-height: 1.4;
+}
+.ready-to-eat h1{
+    color: #333333;
+    font-size:45px;
+    font-family: 'Oswald';
+    font-weight: 600;
+}
+
+.ready-to-eat p{
+    color: #3F580D;
+    font-size: 20px;
+}
+
+.ready-to-eat h3{
+    font-family: 'Lobster', cursive;
+    color: #8A060D;
+    font-size: 35px;
+}
+    
+
+/* ==================== eat-pizza-where-its-grown ================= */
+
+.heros{
+    width: 100%;
+}
+
+.local_hero{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/farmer-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.eat-pizza-where-its-grown h4{
+    font-family: 'Lobster', cursive;
+    color: #8A060D;
+    font-size: 35px;
+ 
+    
+}
+.columns p{
+    font-family: "Oswald";
+    font-weight: 300;
+    color: #828282;
+    font-size: 18px;
+    
+}
+
+.eat-pizza-where-its-grown h3{
+    color: #333333;
+    font-size:45px;
+    font-family: 'Oswald';
+    font-weight: 600;
+}
+
+.eat-pizza-where-its-grown p{
+    color: #3F580D;
+}
+
+.eat-pizza-where-its-grown li{
+    list-style-type: none;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.farm_hero h1{
+    
+    font-size: 30px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+}
+.farm_hero h2{
+    margin-top: 0px;
+    font-size: 48px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+    display: flex;
+    justify-content:center;
+}
+
+.hero_text h2{
+     font-size: 50px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+}
+
+.hero_text h1{
+     font-size: 50px;
+    font-family: 'depressionist_3_revisitedRg';
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+}
+
+
+/* ========================== menu1_hero ====================== */
+
+.menu_hero{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/bread-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.menu_hero h2{
+    font-size: 50px;
+}
+
+.menu_section h1{
+    font-family: 'Lobster', cursive;
+    color: #3F580D;
+    font-size: 26px;
+}
+
+.menu_section p{
+    font-family: 'Oswald';
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+
+.btn-secondary{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.drop-downs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ======================= order_hero ================== */
+
+.order_hero{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/pizza-slice-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.order_hero h2{
+    font-size: 50px;
+}
+
+.order_section{
+    margin-bottom: 20px;
+}
+
+.order_section h2{
+    font-family: 'Lobster', cursive;
+    color: #3F580D;
+    font-size: 35px;
+}
+
+.order_section p{
+    font-family: 'Oswald';
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+select{
+    border: 3px #8A060D solid;
+    margin-top: 10px;
+}
+
+.order_button button{
+    background-color: #8A060D ;
+}
+.order_button button:hover{
+    background-color: #BD1714 ;
+}
+
+textarea{
+    margin-top: 10px;
+    height: 200px;
+    width: 250px;
+    border: 3px #8A060D solid;
+}
+
+
+/* ================= Contact us ================= */
+
+.contact_hero{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/tomatos-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contact_section{
+    width: 100%;
+}
+
+.contact_section h1{
+    font-family: 'Oswald';
+    color: #333333;
+    font-size: 35px;
+}
+
+.contact_section p{
+    font-family: 'Oswald';
+    color: #3F580D;
+    font-size: 18px;
+}
+
+.contact_columns h3{
+    font-family: 'Lobster', cursive;
+    color: #8A060D;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.contact_columns p{
+    color: #4F4F4F;
+    font-family: 'Oswald';
+}
+
+.contact_section{
+    padding-bottom: 0px;
+}
+
+
+
+/* ======================= about ================== */
+
+
+.about_hero{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/oven-pizza-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_section h2{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: #3F580D;
+    font-size: 26px;
+}
+
+
+
+.menu_section p{
+    font-family: 'Oswald';
+    color: #333333;
+    font-size: 18px;
+}
+
+
+.view_menu button{
+    background-color: #8A060D;
+}
+
+.view_menu button:hover{
+    background-color: #BD1714;
+}
+
+.view_menu button:active{
+    background-color: #BD1714;
+}
+
+.card-body{
+    width: 100%;
+    border: none;
+    background-image: url("../img/grain_mobile.png");
+}
+
+.col-sm{
+    display: flex;
+    justify-content: center;
+}
+
+.pizza{
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+.pic_name h3{
+    background-color: #D7521C;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.pic_name img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pizza_description{
+    background-color: #E5D1BA;
+    padding: 30px;
+    margin-top: none;
+    
+}
+
+.pizza_description p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+
+footer{
+    background-color: #8A060D;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 80px;
+}
+
+footer i{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fontawesome{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================== Media Queries ================================= */
+
+/*large phone*/
+@media only screen and (min-width: 350px) and (max-width: 600px){
+    
+    .hero{
+    width: 100%;
+    background-image: url("../img/hero-pizza-large-phone.jpg");
+    height: 275px;
+}
+
+.hero h1{
+    font-size: 33px;
+}
+
+.hero h2{
+    font-size: 54px;
+}
+
+.hero a{
+    height: 35px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+/* ==================== eat-pizza-where-its-grown ================= */
+
+.local_hero{
+    width: 100%;
+    height:275px;
+    background-image: url("../img/tomato-farm-large-phone.jpg");
+}
+
+.eat-pizza-where-its-grown h3{
+    margin-top: 30px;
+}
+ .eat-pizza-where-its-grown p{
+font-size: 20px; 
+
+}
+
+.eat-pizza-where-its-grown h4{
+    margin-top: 30px;
+}
+   
+/* ===================== menu =========================== */
+
+.menu_hero{
+    width: 100%;
+    background-image: url("../img/bread-large-phone.jpg");
+}
+
+.menu_section h1{
+    
+    font-size: 30px;
+}
+
+
+
+.btn-secondary{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.drop-downs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+/* ========================== order ================== */
+
+.order_hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/pizza-slice-large-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea{
+    
+    width: 300px;
+    
+}
+
+/* =================== contact ===================== */
+
+.contact_hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/tomatoes-large-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aside_map{
+      width: 100%;
+  }
+  
+  .map{
+      width: 100%;
+  }
+  
+  iframe{
+      width: 100%;
+      height: 400px;
+  }
+
+/* =========================== About ==================== */
+
+.about_hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/oven-pizza-large-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_section h2{
+    font-size: 35px;
+}
+
+    
+}
+
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  
+  .pizza{
+      width: 335px;
+  }
+  
+  .hero{
+    width: 100%;
+    height: 275px;
+    background-image: url("../img/hero-pizza-tablet.jpg");
+    height: 400px;
+}
+ 
+ .hero h1{
+    font-size: 48px;
+}
+
+.hero h2{
+    font-size: 74px;
+}
+
+.hero a{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.individual_columns{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+}
+ 
+.ready-to-eat{
+    margin-top: 50px;
+}
+  
+
+.local_hero{
+    width: 100%;
+    height:275px;
+    background-image: url("../img/tomato-farm-tablet.jpg");
+}
+
+
+/* ==================== eat-pizza-where-its-grown ================= */
+
+.local_hero{
+    width: 100%;
+    height:275px;
+    background-image: url("../img/tomato-farm-tablet.jpg");
+}
+  
+  .eat-pizza-where-its-grown p{
+font-size: 20px; 
+
+}
+
+.eat-pizza-where-its-grown h3{
+    margin-top: 30px;
+}
+
+
+.eat-pizza-where-its-grown h4{
+    margin-top: 30px;
+}
+  
+  
+/* ==================== Menu ================= */
+
+.menu_hero{
+    width: 100%;
+    height:275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/bread-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_section{
+    padding-top: 20px;
+}
+
+.menu_section h1{
+    font-size: 40px;
+}
+
+.menu_section p{
+    font-size: 20px;
+}
+
+.btn-secondary{
+    width: 150px;
+}
+.drop-downs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+
+/* ========================== order ================== */
+
+.order_hero{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/pizza-slice-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea{
+    
+    width: 400px;
+    
+}
+
+/* ==================== contact =================== */
+
+.contact_hero{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/tomatoes_tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.aside_map{
+      width: 100%;
+  }
+  
+  .map{
+      width: 100%;
+  }
+  
+  iframe{
+      width: 100%;
+      height: 400px;
+  }
+  
+  
+  /* =========================== About ==================== */
+
+.about_hero{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/oven-pizza-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_section h2{
+    font-size: 40px;
+}
+
+.about_section p{
+    font-size: 20px;
+}
+  
+  
+  
+  
+  }
+
+
+
+/*desktop*/
+@media only screen and (min-width: 961px) {
+  
+  .pizza{
+      width: 335px;
+  }
+  
+ .hero{
+    width: 100%;
+    background-image: url("../img/hero-pizza-desktop.jpg");
+    height: 600px;
+}
+ 
+ .hero h1{
+    font-size: 68px;
+}
+
+.hero h2{
+    font-size: 100px;
+}
+
+.hero a{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.individual_columns{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+}
+ 
+.ready-to-eat{
+    margin-top: 50px;
+}
+
+
+/* ==================== eat-pizza-where-its-grown ================= */
+
+.local_hero{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/tomato-farm-desktop.jpg");
+}
+
+.local_hero h1{
+    font-size: 68px;
+}
+
+.local_hero h2{
+    font-size: 100px;
+}
+
+.eat-pizza-where-its-grown p{
+font-size: 20px; 
+
+}
+ 
+ 
+ .eat-pizza-where-its-grown h3{
+    margin-top: 30px;
+}
+
+
+.eat-pizza-where-its-grown h4{
+    margin-top: 30px;
+}
+  
+  /* ==================== Menu ================= */
+
+.menu_hero{
+    width: 100%;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/bread-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_section{
+    padding-top: 20px;
+}
+
+.btn-secondary{
+    width: 200px;
+}
+.drop-downs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.menu_hero h2{
+    font-size: 68px;
+}
+
+.menu_section h1{
+    font-family: 'Lobster', cursive;
+    color: #3F580D;
+    font-size: 40px;
+}
+
+.menu_section p{
+    
+    font-size: 20px;
+}
+
+/* ========================== order ================== */
+
+
+.order_hero{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/pizza-slice-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.order_hero h2{
+    font-size: 68px;
+}
+
+textarea{
+    
+    width: 500px;
+    
+}
+
+
+  
+  /* ================== contact ================== */
+  
+.contact_hero{
+    width: 100%;
+height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/tomato-ingredients-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_hero h2{
+    font-size: 68px;
+}
+  
+.aside_map{
+      width: 100%;
+  }
+  
+  .map{
+      width: 100%;
+  }
+  
+  iframe{
+      width: 100%;
+      height: 400px;
+  }
+  
+  
+  .contact_columns{
+    display: flex;
+    justify-content: space-around;
+}
+  
+  /* =========================== About ==================== */
+
+.about_hero{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/oven-pizza-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  .about_hero h2{
+    font-size: 68px;
+}
+
+.about_section h2{
+    font-size: 40px;
+}
+
+.about_section p{
+    font-size: 20px;
+}
+  
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Author's custom styles Close
+   ========================================================================== */
+   
+   
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
