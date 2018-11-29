@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        
+        
+        <!-- ================= Fonts Open ================== -->
+        <link rel="stylesheet" href="font/webfontkit-20180412-140655/stylesheet.css" type="text/css" charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <!-- ================= Fonts Close ================== -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        
+    </head>
+    <body>
+        
+<h2>Fast, Simple, Done!</h2>
+<h4> Don’t want to wait in line? Order online! We’ll get 
+your order in stat so you can spend less time
+waiting and more time eating. </h4>
+
+<div class="container">
+  <form action="/thank-you.html">
+    <div class="row">
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="FIRST NAME">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="LAST NAME">
+      </div>
+    </div>
+    
+  <div class="row">
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="EMAIL">
+      </div>
+    </div>
+     
+    <div class="row">
+      <div class="col-25">
+        <label for="pizza">CHOOSE YOUR PIE:</label>
+      </div>
+      <div class="col-75">
+        <select class="pizza" name="pizza">
+       <option disabled selected value> -- select an option -- </option>
+          <option value="cheese">CHEESE</option>
+          <option value="pepperoni">PEPPERONI</option>
+          <option value="supreme">SUPREME</option>
+          <option value="vegetable">VEGETABLE</option>
+          <option value="the-hog">THE HOG</option>
+          <option value="hawaiian">HAWAIIAN</option>
+        </select>
+  <input type="number" name="quantity" min="1" max="5">
+      </div>
+    </div>
+ <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Add More</button>
+  <div id="demo" class="collapse">
+   <select class="pizza" name="pizza">
+ <option disabled selected value> -- select an option -- </option>
+          <option value="cheese">CHEESE</option>
+          <option value="pepperoni">PEPPERONI</option>
+          <option value="supreme">SUPREME</option>
+          <option value="vegetable">VEGETABLE</option>
+          <option value="the-hog">THE HOG</option>
+          <option value="hawaiian">HAWAIIAN</option>
+        </select>
+  <input type="number" name="quantity" min="1" max="5">
+      </div>
+   
+<select class="pizza" name="pizza">
+ <option disabled selected value> -- select an option -- </option>
+          <option value="cheese">CHEESE</option>
+          <option value="pepperoni">PEPPERONI</option>
+          <option value="supreme">SUPREME</option>
+          <option value="vegetable">VEGETABLE</option>
+          <option value="the-hog">THE HOG</option>
+          <option value="hawaiian">HAWAIIAN</option>
+        </select>
+  <input type="number" name="quantity" min="1" max="5">
+      </div>
+    </div>
+  </div>
+</div> 
+   
+   
+   
+      <div class="col-25">
+        <label for="pizza-size">PIE SIZE:</label>
+      </div>
+      <div class="col-75">
+        <select class="pizza" name="pizza">
+          <option value="small">10" SMALL</option>
+          <option value="medium">13" MEDIUM</option>
+          <option value="large">15" LARGE</option>   
+      </select>
+      </div>
+    </div>
+    
+    
+    
+    
+ <label for="pizza">CRUST TYPE:</label>
+    <br>
+<input type="radio" name="crust" value="thick" unchecked>THICK
+  <input type="radio" name="crust" value="thin"> THIN 
+      
+ <div class="row">
+      <div class="col-25">
+        <label for="drinks">DRINKS:</label>
+      </div>
+      <div class="col-75">
+        <select id="drinks" name="drinks">
+   <option disabled selected value> -- select an option -- </option>
+          <option value="coke">COKE</option>
+          <option value="diet-coke">DIET COKE</option>
+          <option value="sprite">SPRITE</option>
+          <option value="dr.pepper">DR.PEPPER</option>
+          <option value="iced-tea">ICED TEA</option>
+        </select>
+      <input type="number" name="quantity" min="1" max="5">
+      </div>
+    </div>    
+    
+ <div class="row">
+      <div class="col-25">
+        <label for="extras">EXTRAS:</label>
+      </div>
+      <div class="col-75">
+        <select id="extras" name="extras">
+   <option disabled selected value> -- select an option -- </option>
+          <option value="bread-regular">BREADSTICKS (REGULAR)</option>
+          <option value="bread-stuffed">BREADSTICKS (STUFFED)</option>
+          <option value="house-salad">HOUSE SALAD</option>    
+       </select>
+  <input type="number" name="quantity" min="1" max="5">
+      </div>
+    </div>   
+    
+    
+    
+    
+    <div class="row">
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="ADDITIONAL COMMENTS..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+
+
+
+    </body>
+</html>
