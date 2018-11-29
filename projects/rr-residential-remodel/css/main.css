@@ -1,0 +1,914 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body{
+    
+
+    background-color: #fff;
+}
+
+nav a{
+    font-family: 'Raleway', sans-serif;
+}
+
+button.navbar-toggler{
+    border: none;
+}
+
+
+
+
+
+
+/* ================= index.html ============== */
+
+.hero{
+    height:249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/kitchen_mobile_600x450.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.hero h2{
+    
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 20px #000000 ;
+}
+
+.color{
+    color: #3986D3;
+    
+}
+
+.contact_us{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    align-items: center;
+    
+
+}
+
+.request_button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  
+    
+}
+
+.request_button a{
+    border: 3px #3986D3 solid;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    
+}
+
+.request_button a:hover{
+    text-decoration: none;
+}
+
+.contact_button a:hover{
+    text-decoration: none;
+}
+
+.contact_button a{
+    text-decoration: none;
+    border: 3px #3986D3 solid;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+}
+.contact_button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.contact_us p{
+    width: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    
+}
+
+.cta_paragraph{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* =================== services =================== */
+
+.services h2{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.section-title{
+    display: flex;
+    justify-content:center;
+}
+
+
+.services{
+    background-color: #E8E8E8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.service_columns{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.individual_columns h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+.individual_columns p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    
+}
+
+
+.get_in_touch{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    align-items: center;
+
+}
+
+.contact_button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.get_in_touch a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    
+    
+    
+    
+}
+
+.get_in_touch p{
+    width: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    
+}
+
+
+/* ======================= testimonials ================ */
+
+.testimonials{
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content:center;
+    padding: 50px;
+}
+
+.test_icon{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.testimonials blockquote, i{
+    color: #fff;
+    
+}
+
+/* ================== contact info =============== */
+
+.contact_info{
+    background-color: #3986D3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.info{
+    width: 200px;
+    color: #fff;
+}
+
+
+.info h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.info p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.info a{
+    color: #fff;
+}
+
+.requestquote_button a{
+    border: 3px white solid;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ================== footer ================= */
+
+footer{
+    background-color: #C4C4C4;
+    padding: 20px;
+}
+
+footer h4{
+    color: #3986D3;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+footer hr{
+    color: #828282;
+}
+
+footer ul{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #3986D3;
+}
+
+
+.snippet_img{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .snippet_p{
+      width: 80%;
+      margin-top: 20px;
+  }
+  
+  .snippet{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+/* ============== contact ============= */
+
+.contact{
+    background-color: #3986D3;
+    height: 500px;
+    color: #fff;
+}
+
+.items{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.contact h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.contact p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+
+
+/* ====================== gallery.html ================== */
+
+
+ 
+.gallery_text{
+    margin: 20px 40px 40px 40px;
+}
+
+.gallery_text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+}
+
+.decoration{
+    display: block;
+    height: 1px;
+    width: 100px;
+    border: 0;
+    border-top: 3px solid #3986D3;
+}
+
+.gallery_text p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.gallery{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery_boxes{
+    margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cell{
+    padding-bottom: 20px;
+}
+
+
+
+
+.row_gallery{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* =================== About ================= */
+
+.about_text{
+    margin: 20px 40px 40px 40px;
+}
+
+.about_text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+}
+
+.about_text p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.about_gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* =================== Referral ================= */
+
+.referral_text{
+    margin: 20px 40px 40px 40px;
+}
+
+.referral_text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+}
+
+.referral_text p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.bold{
+    font-weight:800;
+}
+
+
+
+
+
+/* ========================== Media Queries ===================== */
+
+/*large phone*/ @media only screen and (min-width: 350px) and (max-width: 650px){
+   
+    .hero{
+    height: 275px;
+    background-image: url("../img/kitchen-large-phone.jpg");
+}
+   
+    .gallery_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .snippet_img{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .snippet_p{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+  }
+    
+}
+
+
+/*tablet*/@media screen and (min-width: 650px) and (max-width: 960px) {
+  
+  .hero{
+    height: 400px;
+    background-image: url("../img/kitchen-tablet.jpg");
+}
+  
+  .gallery_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  
+  .contact_info{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .info{
+      padding-left: 20px;
+      justify-content: space-around;
+  }
+  
+  /* ========= Snippet =========== */
+
+.snippet{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+.snippet p{
+    width: 200px;
+}
+
+.snippet_p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+   /* =========== buttons ========== */
+ 
+ .get_in_touch{
+     height: 100px;
+ }
+ 
+ .contact_us{
+     height: 100px;
+ }
+ 
+   /* =========== services ========== */ 
+    .columns{
+    display: flex;
+    justify-content: space-around;
+    
+}
+  
+}
+
+/*desktop*/@media screen and (min-width: 960px) {
+  
+   /* =========== nav ========== */
+  
+  .navbar{
+    padding-left: 50px;
+}
+
+/* ========= Snippet =========== */
+
+.snippet{
+    display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+
+.snippet p{
+    width: 300px;
+}
+
+.snippet_p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+ /* =========== gallery ========== */
+  
+  .gallery_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  
+  /* =========== services ========== */ 
+
+  
+.columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.individual_columns{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+/* ======= Contact info ========== */
+
+.contact_info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  
+  .info{
+      padding-left: 20px;
+  }
+
+
+  
+ /* =========== hero ========== */
+
+  .hero{
+    height: 500px;
+    background-image: url("../img/kitchen_desktop.jpg");
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+ /* =========== buttons ========== */
+ 
+ .get_in_touch{
+     height: 150px;
+ }
+ 
+ .contact_us{
+     height: 150px;
+ }
+
+
+ /* =========== testimonial ========== */
+
+.testimonial_content{
+    width: 500px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
